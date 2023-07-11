@@ -18,6 +18,14 @@
 			"extensions": [
 				"ms-python.python"
 			]
+		},
+
+		// Configure properties specific to Codespaces.
+		"codespaces": {
+			"openFiles": [
+				"README.md",
+				"README.rst"
+			]
 		}
 	}
 
