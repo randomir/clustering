@@ -7,11 +7,11 @@
 	// source repo: https://github.com/dwavesystems/ocean-dev-docker
 	"image": "docker.io/dwavesys/ocean-dev:latest",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	// install repo requirements on create and content update
+	"updateContentCommand": "pip install -r requirements.txt",
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install -r requirements.txt",
+	// print auth tip
+	"postCreateCommand": "echo 'To configure access to Leap, run: \\\"dwave auth login --oob\\\".'",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [18000, 18001, 18002, 18003, 18004],
