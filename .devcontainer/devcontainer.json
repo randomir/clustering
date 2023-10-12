@@ -1,10 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-	"name": "LeapIDE for Codespaces",
+	"name": "Ocean Development Environment",
 
-	// user docker leapide image for codespaces
-	"image": "docker.io/dwavesys/leapide:latest-codespaces-dev",
+	// python 3.11 on debian, with latest Ocean and optional packages
+	// source repo: https://github.com/dwavesystems/ocean-dev-docker
+	"image": "docker.io/dwavesys/ocean-dev:latest",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -34,7 +35,4 @@
 			]
 		}
 	}
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
