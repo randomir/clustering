@@ -1,4 +1,4 @@
-image: dwavesys/ocean-dev:latest
+image: docker.io/dwavesys/ocean-dev:latest
 
 tasks:
   - init: pip install -r requirements.txt
